@@ -1,0 +1,88 @@
+# Full Experiment Configuration for LOB-PROFIT Pipeline
+
+project_name: "LOB-PROFIT_Research_Study"
+random_seed: 42
+
+datasets:
+  - id: "D01_FI2010"
+    name: "FI2010_Benchmark"
+    symbol: "FI2010_LSE"
+    num_samples: 1000
+    levels: 10
+    daily_volume: 500000.0
+    tick_size: 0.05
+    source: "datasets/raw/fi2010_benchmark_sample.csv"
+  - id: "D02_CRYPTO_BTC"
+    name: "Crypto_BTC_USDT"
+    symbol: "BTCUSDT"
+    num_samples: 800
+    levels: 10
+    daily_volume: 250000.0
+    tick_size: 0.1
+    source: "datasets/raw/crypto_btcusdt_lob.csv"
+  - id: "D03_CRYPTO_ETH"
+    name: "Crypto_ETH_USDT"
+    symbol: "ETHUSDT"
+    num_samples: 800
+    levels: 10
+    daily_volume: 350000.0
+    tick_size: 0.01
+    source: "datasets/raw/crypto_ethusdt_lob.csv"
+
+features:
+  tiers_enabled: ["Tier 0", "Tier 1", "Tier 2", "Tier 3"]
+  num_levels: 10
+  sequence_length: 15
+  cii_windows: [5, 10, 20]
+  momentum_lags: [1, 5, 10, 30]
+
+targets:
+  horizon_delta: 10
+  smoothing_window_H: 5
+  threshold_alpha: 0.00015
+
+models:
+  baselines:
+    - "logistic_regression"
+    - "random_forest"
+    - "xgboost"
+    - "kernel_svm"
+  deep_learning:
+    - "deeplob_spatial"
+    - "deeplob_spatiotemporal"
+    - "lit_transformer"
+  ensembles:
+    - "dynamic_sharpe_ensemble"
+
+training:
+  walk_forward_folds: 5
+  train_window_folds: 2
+  val_fraction: 0.2
+  epochs: 10
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  dropout: 0.25
+
+recim:
+  fee_rate: 0.0002        # 2 bps
+  eta: 0.5                # Market impact coefficient
+  xi_star: 0.001          # Crossover threshold
+  base_hazard_rate: 0.15  # Limit order fill hazard
+  default_order_size: 1.0
+  confidence_threshold: 0.40
+
+risk:
+  max_position_size: 10.0
+  stop_loss_pct: 0.005
+  max_drawdown_limit: 0.05
+  latency_buffer_ms: 5.0
+
+paths:
+  raw_data_dir: "datasets/raw"
+  processed_data_dir: "datasets/processed"
+  results_figures_dir: "results/figures"
+  results_tables_dir: "results/tables"
+  results_diagrams_dir: "results/diagrams"
+  reports_dir: "reports"
+  literature_dir: "literature"

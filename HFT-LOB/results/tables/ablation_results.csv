@@ -1,0 +1,6 @@
+component_removed,sharpe_change,accuracy_change,p_value
+Without Tier 2 (OFI Features),-0.42,-0.035,0.008
+Without Tier 3 (Dynamic Features),-0.31,-0.021,0.024
+Without RECIM Cost Accounting,1.85,0.0,0.001
+Without Expanding-Window Norm,0.95,0.082,0.001
+Without Dynamic Sharpe Ensemble,-0.28,-0.012,0.045

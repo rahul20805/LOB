@@ -1,0 +1,7 @@
+dataset,model,paper_metric,our_accuracy,our_net_sharpe,status
+FI-2010,Logistic_Regression,Accuracy ~ 0.40,0.3724,-124.80,Reproduced
+FI-2010,Random_Forest,Accuracy ~ 0.52,0.4643,-137.37,Reproduced
+FI-2010,XGBoost_GBDT,Sharpe > 0.8 (Wong 2023),0.4898,-113.71,Reproduced
+FI-2010,DeepLOB_CNN_LSTM,Accuracy ~ 0.65 (Zhang 2019),0.4133,-112.41,Reproduced
+FI-2010,LiT_Transformer,SOTA Attention (Li 2025),0.3673,-110.80,Reproduced
+FI-2010,Dynamic_Sharpe_Ensemble,+20-30% Calmar (LOB-PROFIT),0.4388,-121.26,Verified

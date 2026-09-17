@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Large high-frequency tick files exceeding GitHub 100MB hard limit
+*_1sec.csv
+*.zip
+Dataset/F1 datset.zip
+Dataset/F1 datset/BenchmarkDatasets/
+
+# Office temporary lock files
+~$*
+.~lock.*
+
+# OS generated and temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

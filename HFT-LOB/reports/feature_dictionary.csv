@@ -1,0 +1,85 @@
+feature_name,tier,description,formula_reference,data_type
+bid_p_1,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_1,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_1,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_1,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_2,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_2,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_2,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_2,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_3,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_3,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_3,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_3,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_4,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_4,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_4,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_4,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_5,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_5,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_5,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_5,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_6,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_6,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_6,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_6,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_7,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_7,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_7,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_7,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_8,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_8,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_8,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_8,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_9,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_9,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_9,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_9,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+bid_p_10,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+bid_v_10,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+ask_p_10,Tier 0 (Raw LOB),Limit order book price level,Eq (1),float64
+ask_v_10,Tier 0 (Raw LOB),Limit order book volume depth,Eq (1),float64
+spread,Tier 1 (Microstructure),Bid-ask spread metric,Eq (8),float64
+mid_price,Tier 1 (Microstructure),Microstructural indicator,Taxonomy,float64
+spread_bps,Tier 1 (Microstructure),Bid-ask spread metric,Eq (8),float64
+microprice,Tier 1 (Microstructure),Volume-weighted mid price,Eq (11),float64
+microprice_spread_dev,Tier 1 (Microstructure),Bid-ask spread metric,Eq (8),float64
+volume_imbalance_topK,Tier 1 (Microstructure),Order book queue/volume imbalance,Eq (10),float64
+volume_imbalance_level1,Tier 1 (Microstructure),Order book queue/volume imbalance,Eq (10),float64
+total_bid_depth,Tier 1 (Microstructure),Microstructural indicator,Taxonomy,float64
+total_ask_depth,Tier 1 (Microstructure),Microstructural indicator,Taxonomy,float64
+total_book_depth,Tier 1 (Microstructure),Microstructural indicator,Taxonomy,float64
+depth_ratio_l1_to_topK,Tier 1 (Microstructure),Microstructural indicator,Taxonomy,float64
+ofi_level_1,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_2,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_3,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_4,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_5,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_6,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_7,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_8,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_9,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_level_10,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_best_level,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+ofi_integrated,Tier 2 (OFI),Order flow imbalance metric,"Eq (5)-(7), (12)-(13)",float64
+cii_window_5,Tier 2 (OFI),Cumulative imbalance index,Eq (14),float64
+cii_window_10,Tier 2 (OFI),Cumulative imbalance index,Eq (14),float64
+cii_window_20,Tier 2 (OFI),Cumulative imbalance index,Eq (14),float64
+price_momentum_lag_1,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+pct_return_lag_1,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+price_momentum_lag_5,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+pct_return_lag_5,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+price_momentum_lag_10,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+pct_return_lag_10,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+price_momentum_lag_30,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+pct_return_lag_30,Tier 3 (Dynamics),Multi-horizon price trend indicator,Sec 4.2.4,float64
+spread_change_lag1,Tier 3 (Dynamics),Bid-ask spread metric,Eq (8),float64
+spread_rolling_mean_10,Tier 3 (Dynamics),Bid-ask spread metric,Eq (8),float64
+realized_vol_w10,Tier 3 (Dynamics),Realized tick volatility,Sec 4.2.4,float64
+realized_vol_w30,Tier 3 (Dynamics),Realized tick volatility,Sec 4.2.4,float64
+realized_vol_w50,Tier 3 (Dynamics),Realized tick volatility,Sec 4.2.4,float64
+queue_change_bid_l1,Tier 3 (Dynamics),Microstructural indicator,Taxonomy,float64
+queue_change_ask_l1,Tier 3 (Dynamics),Microstructural indicator,Taxonomy,float64
+queue_imbalance_diff,Tier 3 (Dynamics),Order book queue/volume imbalance,Eq (10),float64
+time_sin,Tier 3 (Dynamics),Intraday cyclical time encoding,Sec 4.2.4,float64
+time_cos,Tier 3 (Dynamics),Intraday cyclical time encoding,Sec 4.2.4,float64
